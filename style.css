@@ -51,3 +51,12 @@ form {
 textarea {
   width: 50%;
 }
+@media (max-width: 400px){
+    #submit{
+        font-size: 15px;
+        padding: 5px 90px;
+    }
+    #description {
+        margin: 20px;
+    }
+}
