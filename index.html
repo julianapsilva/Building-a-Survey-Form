@@ -1,57 +1,96 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Building a Survey Form</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
     <main>
-        <h1 id="title">Formulário de Pesquisa</h1>
-        <p id="description">Obrigada por nos ajudar a melhorar nossa plataforma</p>
-        <div>
-            <form id="survey-form">
-                <p>Nome</p>
-                <input type="text" name="" id="name-label" placeholder="Digite seu nome" required>
-                <p>Email</p>
-                <input type="email" name="email" id="email-label" placeholder="Digite seu e-mail" required>
-                <p>Idade (opcional) </p>
-                <input type="number" name="" id="number-label" min="1" max="100" placeholder="Idade">
-                <p>Qual opção melhor descreve sua situação?</p>
-                <select id="dropdown" required>
-                    <option>Graduação</option>
-                    <option>Mestrado</option>
-                    <option>Trabalhando</option>
-                    <option>Formado</option>
-                </select>
-                <p>Você recomendaria nossa plataforma?</p>
-                <p>
-                <input type="radio" name="rating" id="" value="sim"> Sim 
-                <input type="radio" name="rating" id="" value="talvez"> Talvez
-                <input type="radio" name="rating" id="" value="nao"> Não
-                </p>
-                <p>Qual a principal funcionalidade que você mais gosta?</p>
-                <select>
-                    <option> Desafios </option>
-                    <option> Recomendações </option>
-                    <option> Testes </option>
-                </select>
-                
-                <p>Qual sua maior área de interesse?</p>
-                <p><input type="checkbox" name="improves" id="" value="Front-End"> Front-End</p>
-                <p><input type="checkbox" name="improves" id="" value="Back-End"> Back-End </p>
-                <p><input type="checkbox" name="improves" id="" value="DevOps"> DevOps</p>
-                <p><input type="checkbox" name="improves" id="" value="IA"> Inteligência Artificial</p>
+      <h1 id="title">Formulário de Pesquisa</h1>
+      <p id="description">
+        Obrigada por nos ajudar a melhorar nossa plataforma
+      </p>
+      <div>
+        <form id="survey-form">
+          <label id="name-label" >Nome <br />
+            <input
+              type="text"
+              name=""
+              id="name"
+              placeholder="Digite seu nome"
+              required
+            />
+          </label>
+          <label id="email-label">
+            <br />Email <br /><input
+              type="email"
+              name="email"
+              id="email"
+              placeholder="Digite seu e-mail"
+              required
+            />
+          </label>
+          <label id="number-label"
+            ><br />Idade (opcional)<br /><input
+              type="number"
+              name=""
+              id="age"
+              min="1"
+              max="100"
+              placeholder="Idade"
+            />
+          </label>
 
-                <p>Sugestões ou comentários?</p>
-                <textarea> </textarea>
-                <br>
-                <button type="submit" class="submit">Enviar respostas</button>
-            </form >
-        </div>
+          <p>Qual opção melhor descreve sua situação?</p>
+          <select id="dropdown" required>
+            <option>Graduação</option>
+            <option>Mestrado</option>
+            <option>Trabalhando</option>
+            <option>Formado</option>
+          </select>
+          <p>Você recomendaria nossa plataforma?</p>
+
+          <input type="radio" name="rating" id="sim" value="sim" />
+          <label for="sim">Sim</label>
+          <input type="radio" name="rating" id="talvez" value="talvez" />
+          <label for="talvez">Talvez</label>
+          <input type="radio" name="rating" id="nao" value="nao" />
+          <label for="nao">Não</label>
+
+          <p>Qual a principal funcionalidade que você mais gosta?</p>
+          <select id="options">
+            <option>Desafios</option>
+            <option>Recomendações</option>
+            <option>Testes</option>
+          </select>
+
+          <p>Qual sua maior área de interesse?</p>
+          <p>
+            <input type="checkbox" name="improves" id="" value="Front-End" />
+            Front-End
+          </p>
+          <p>
+            <input type="checkbox" name="improves" id="" value="Back-End" />
+            Back-End
+          </p>
+          <p>
+            <input type="checkbox" name="improves" id="" value="DevOps" />
+            DevOps
+          </p>
+          <p>
+            <input type="checkbox" name="improves" id="" value="IA" />
+            Inteligência Artificial
+          </p>
+
+          <p>Sugestões ou comentários?</p>
+          <textarea> </textarea>
+          <br />
+          <button type="submit" id="submit">Enviar respostas</button>
+        </form>
+      </div>
     </main>
-    
-</body>
+  </body>
 </html>
